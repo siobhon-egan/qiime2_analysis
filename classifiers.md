@@ -18,25 +18,25 @@ Trained classifiers have been done for the follow:
 
 - Green genes [13_8 release](ftp://greengenes.microbio.me/greengenes_release/gg_13_5/gg_13_8_otus.tar.gz)
 	- 16S rRNA V1-2 - primers 27F-Y and 338R
-  		- 27F-Y `AGAGTTTGATCCTGGCTYAG` (Ref: Gofton et al. 2015, DOI: 10.1186/s13071-015-0958-3)
-  		- 338R `TGCTGCCTCCCGTAGGAGT` (Ref: Turner et al. 1999, DOI: 10.1111/j.1550-7408.1999.tb04612.x)
+	  		- 27F-Y `AGAGTTTGATCCTGGCTYAG` (Ref: Gofton et al. 2015, DOI: 10.1186/s13071-015-0958-3)
+	  		- 338R `TGCTGCCTCCCGTAGGAGT` (Ref: Turner et al. 1999, DOI: 10.1111/j.1550-7408.1999.tb04612.x)
 	- 16S rRNA V4 - primers 515F and 806R
-			- 515F `GTGBCAGCMGCCGCGGTAA` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
-			- 806R `GGACTACHVGGGTWTCTAAT` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 515F `GTGBCAGCMGCCGCGGTAA` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 806R `GGACTACHVGGGTWTCTAAT` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
 	- 16S rRNA V3-4 - primers 338F and 806R
-			- 338F `ACTCCTACGGGAGGCAGCAG` (Lopez et al. 2003, DOI: 10.1128/AEM.69.11.6801-6807.2003)
-			- 806R `GGACTACHVGGGTWTCTAAT ` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 338F `ACTCCTACGGGAGGCAGCAG` (Lopez et al. 2003, DOI: 10.1128/AEM.69.11.6801-6807.2003)
+				- 806R `GGACTACHVGGGTWTCTAAT ` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
 
 - Silva [132 release](https://www.arb-silva.de/fileadmin/silva_databases/qiime/Silva_132_release.zip)
 	- 16S rRNA V1-2 - primers 27F-Y and 338R
-  		- 27F-Y `AGAGTTTGATCCTGGCTYAG` (Ref: Gofton et al. 2015, DOI: 10.1186/s13071-015-0958-3)
-  		- 338R `TGCTGCCTCCCGTAGGAGT` (Ref: Turner et al. 1999, DOI: 10.1111/j.1550-7408.1999.tb04612.x)
+	  		- 27F-Y `AGAGTTTGATCCTGGCTYAG` (Ref: Gofton et al. 2015, DOI: 10.1186/s13071-015-0958-3)
+	  		- 338R `TGCTGCCTCCCGTAGGAGT` (Ref: Turner et al. 1999, DOI: 10.1111/j.1550-7408.1999.tb04612.x)
 	- 16S rRNA V4 - primers 515F and 806R
-			- 515F `GTGBCAGCMGCCGCGGTAA` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
-			- 806R `GGACTACHVGGGTWTCTAAT` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 515F `GTGBCAGCMGCCGCGGTAA` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 806R `GGACTACHVGGGTWTCTAAT` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
 	- 16S rRNA V3-4 - primers 338F and 806R
-			- 338F `ACTCCTACGGGAGGCAGCAG` (Lopez et al. 2003, DOI: 10.1128/AEM.69.11.6801-6807.2003)
-			- 806R `GGACTACHVGGGTWTCTAAT ` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
+				- 338F `ACTCCTACGGGAGGCAGCAG` (Lopez et al. 2003, DOI: 10.1128/AEM.69.11.6801-6807.2003)
+				- 806R `GGACTACHVGGGTWTCTAAT ` (Caporaso et al. 2011, DOI: 10.1073/pnas.1000080107)
 
 ## 1. Extract required files
 
