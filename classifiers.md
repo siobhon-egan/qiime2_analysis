@@ -45,6 +45,7 @@ Trained classifiers have been done for the follow:
 Download the latest Greengenes release, [currently 13_8 release](ftp://greengenes.microbio.me/greengenes_release/gg_13_5/gg_13_8_otus.tar.gz)
 
 Once you unzip the file `gg_13_8_otus` it should contain the following:
+
 ```
 otus/
 rep_set/
@@ -64,6 +65,7 @@ Files you will need for this tutorial are
 Download the latest Silva release, [currently 132](https://www.arb-silva.de/fileadmin/silva_databases/qiime/Silva_132_release.zip).
 
 Once you unzip the file `SILVA_132_QIIME_release` it should contain the following:
+
 ```
 core_alignment/
 raw_data/
@@ -92,17 +94,18 @@ conda activate qiime2-2020.11
 ## 4. Greengenes classifier
 
 **4.1. Make QIIME2 artifacts**
+
 ```
 qiime tools import \
-  --type 'FeatureData[Sequence]' \
-  --input-path 99_otus.fasta \
-  --output-path 99_otus_16S.qza
+--type 'FeatureData[Sequence]' \
+--input-path 99_otus.fasta \
+--output-path 99_otus_16S.qza
 
-	qiime tools import \
-	  --type 'FeatureData[Taxonomy]' \
-	  --input-format HeaderlessTSVTaxonomyFormat \
-	  --input-path 99_otu_taxonomy.txt \
-	  --output-path ref-taxonomy.qza
+qiime tools import \
+--type 'FeatureData[Taxonomy]' \
+--input-format HeaderlessTSVTaxonomyFormat \
+--input-path 99_otu_taxonomy.txt \
+--output-path ref-taxonomy.qza
 ```
 
 **4.2. Extract reference sequences**
@@ -110,13 +113,13 @@ qiime tools import \
 *A. For 16S rRNA v1-2 and v4 amplicons*
 ```
 qiime feature-classifier extract-reads \
-  --i-sequences 99_otus_16S.qza \
-  --p-f-primer {SEQUENCE} \
-  --p-r-primer {SEQUENCE} \
-  --p-trunc-len 120 \
-  --p-min-length 100 \
-  --p-max-length 400 \
-  --o-reads ref-seqs.qza
+--i-sequences 99_otus_16S.qza \
+--p-f-primer {SEQUENCE} \
+--p-r-primer {SEQUENCE} \
+--p-trunc-len 120 \
+--p-min-length 100 \
+--p-max-length 400 \
+--o-reads ref-seqs.qza
 ```
 
 Output artifacts: `ref-seqs.qza`
@@ -124,12 +127,12 @@ Output artifacts: `ref-seqs.qza`
 *B. For 16S rRNA v3-4 amplicons*
 ```
 qiime feature-classifier extract-reads \
-  --i-sequences 99_otus_16S.qza \
-	--p-f-primer ACTCCTACGGGAGGCAGCAG \
-  --p-r-primer GGACTACHVGGGTWTCTAAT \
-  --p-min-length 100 \
-  --p-max-length 500 \
-  --o-reads ref-seqs.qza
+--i-sequences 99_otus_16S.qza \
+--p-f-primer ACTCCTACGGGAGGCAGCAG \
+--p-r-primer GGACTACHVGGGTWTCTAAT \
+--p-min-length 100 \
+--p-max-length 500 \
+--o-reads ref-seqs.qza
 ```
 
 Output artifacts: `ref-seqs.qza`
@@ -138,9 +141,9 @@ Output artifacts: `ref-seqs.qza`
 
 ```
 qiime feature-classifier fit-classifier-naive-bayes \
-  --i-reference-reads ref-seqs.qza \
-  --i-reference-taxonomy ref-taxonomy.qza \
-  --o-classifier classifier.qza
+--i-reference-reads ref-seqs.qza \
+--i-reference-taxonomy ref-taxonomy.qza \
+--o-classifier classifier.qza
 ```
 Output artifacts: `classifier.qza`
 
@@ -149,15 +152,15 @@ Output artifacts: `classifier.qza`
 **5.1. Make QIIME2 artifacts**
 ```
 qiime tools import \
-  --type 'FeatureData[Sequence]' \
-  --input-path silva_132_99_16S.fna \
-  --output-path 99_otus_16S.qza
+--type 'FeatureData[Sequence]' \
+--input-path silva_132_99_16S.fna \
+--output-path 99_otus_16S.qza
 
-	qiime tools import \
-	  --type 'FeatureData[Taxonomy]' \
-	  --input-format HeaderlessTSVTaxonomyFormat \
-	  --input-path consensus_taxonomy_7_levels.txt \
-	  --output-path ref-taxonomy.qza
+qiime tools import \
+--type 'FeatureData[Taxonomy]' \
+--input-format HeaderlessTSVTaxonomyFormat \
+--input-path consensus_taxonomy_7_levels.txt \
+--output-path ref-taxonomy.qza
 ```
 
 **5.2. Extract reference sequences**
@@ -165,13 +168,13 @@ qiime tools import \
 *A. For 16S rRNA v1-2 and v4 amplicons*
 ```
 qiime feature-classifier extract-reads \
-  --i-sequences 99_otus_16S.qza \
-  --p-f-primer {SEQUENCE} \
-  --p-r-primer {SEQUENCE} \
-  --p-trunc-len 120 \
-  --p-min-length 100 \
-  --p-max-length 400 \
-  --o-reads ref-seqs.qza
+--i-sequences 99_otus_16S.qza \
+--p-f-primer {SEQUENCE} \
+--p-r-primer {SEQUENCE} \
+--p-trunc-len 120 \
+--p-min-length 100 \
+--p-max-length 400 \
+--o-reads ref-seqs.qza
 ```
 
 Output artifacts: `ref-seqs.qza`
@@ -179,12 +182,12 @@ Output artifacts: `ref-seqs.qza`
 *B. For 16S rRNA v3-4 amplicons*
 ```
 qiime feature-classifier extract-reads \
-  --i-sequences 99_otus_16S.qza \
-  --p-f-primer ACTCCTACGGGAGGCAGCAG \
-  --p-r-primer GGACTACHVGGGTWTCTAAT \
-  --p-min-length 100 \
-  --p-max-length 500 \
-  --o-reads ref-seqs.qza
+--i-sequences 99_otus_16S.qza \
+--p-f-primer ACTCCTACGGGAGGCAGCAG \
+--p-r-primer GGACTACHVGGGTWTCTAAT \
+--p-min-length 100 \
+--p-max-length 500 \
+--o-reads ref-seqs.qza
 ```
 
 Output artifacts: `ref-seqs.qza`
@@ -193,8 +196,8 @@ Output artifacts: `ref-seqs.qza`
 
 ```
 qiime feature-classifier fit-classifier-naive-bayes \
-  --i-reference-reads ref-seqs.qza \
-  --i-reference-taxonomy ref-taxonomy.qza \
-  --o-classifier classifier.qza
+--i-reference-reads ref-seqs.qza \
+--i-reference-taxonomy ref-taxonomy.qza \
+--o-classifier classifier.qza
 ```
 Output artifacts: `classifier.qza`
