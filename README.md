@@ -2,7 +2,7 @@
 
 Author: Siobhon L Egan
 
-**Last updated** Jan 2021
+>**Last updated** Jan 2021
 **QIIME2 version** QIIME2-2020.11
 
 Set of workflows for analysis of amplicon next-generation sequencing data in [QIIME2](https://qiime2.org/).
